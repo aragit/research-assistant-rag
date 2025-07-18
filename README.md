@@ -2,8 +2,8 @@
 
 This project is a fully local, chat-based Research Assistant that uses Retrieval Augmented Generation (RAG) to answer questions about scientific papers and other documents in PDF format. It leverages a local LLM and a vector database, ensuring your data remains private.
 
-![Screenshot of the Research Assistant UI](https://i.imgur.com/example.png)
-
+![Screenshot of the Research Assistant UI](https://media.licdn.com/dms/image/v2/D4D22AQEuR6oSoEUedA/feedshare-shrink_1280/B4DZfNzyaXH4Ao-/0/1751504595899?e=1755734400&v=beta&t=GcJOC2x73wGgTmQ7M9pwgIjedT8Kl2rtIrkrjQVzRwE)
+We used Naive RAG for this project . Try to research other pattern too. 
 ---
 
 ## ## Features
