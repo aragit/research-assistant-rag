@@ -3,10 +3,11 @@
 This project is a fully local, chat-based Research Assistant that uses Retrieval Augmented Generation (RAG) to answer questions about scientific papers and other documents in PDF format. It leverages a local LLM and a vector database, ensuring your data remains private.
 
 ![Screenshot of the Research Assistant UI](https://media.licdn.com/dms/image/v2/D4D22AQEuR6oSoEUedA/feedshare-shrink_1280/B4DZfNzyaXH4Ao-/0/1751504595899?e=1755734400&v=beta&t=GcJOC2x73wGgTmQ7M9pwgIjedT8Kl2rtIrkrjQVzRwE)
-We used Naive RAG for this project . Try to research other pattern too. 
+
+ We used Naive RAG for this project . Try to research other pattern too. 
 ---
 
-## ## Features
+#### Features
 
 -   **📄 PDF Document Processing**: Ingests and processes multiple PDF files from a local directory.
 -   **🧠 Local LLM**: Uses the CPU-optimized `Gemma-2-2B-IT` model in GGUF format, running entirely on your machine. No API keys needed.
@@ -17,7 +18,7 @@ We used Naive RAG for this project . Try to research other pattern too.
 
 ---
 
-## ## How It Works
+#### How It Works
 
 The application follows a standard RAG pipeline, divided into two main stages:
 
@@ -36,7 +37,7 @@ This happens every time you ask a question.
 
 ---
 
-## ## Setup and Usage
+### Setup and Usage
 
 Follow these steps to get the application running on your local machine.
 
@@ -83,7 +84,8 @@ The script will first create the FAISS index (this may take a few minutes depend
 
 ---
 
-## ## Technology Stack
+#### Technology Stack
+##### Naive RAG:
 
 -   **Backend Framework**: [LangChain](https://www.langchain.com/)
 -   **LLM**: [Google Gemma-2](https://huggingface.co/google/gemma-2-2b-it) (via [Llama.cpp](https://github.com/ggerganov/llama.cpp))
