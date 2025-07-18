@@ -7,7 +7,7 @@ This project is a fully local, chat-based Research Assistant that uses Retrieval
  ##### *We used Naive RAG for this project . Try to figour out  other pattern*
 ---
 
-#### Features
+### Features
 
 -   **📄 PDF Document Processing**: Ingests and processes multiple PDF files from a local directory.
 -   **🧠 Local LLM**: Uses the CPU-optimized `Gemma-2-2B-IT` model in GGUF format, running entirely on your machine. No API keys needed.
@@ -18,7 +18,7 @@ This project is a fully local, chat-based Research Assistant that uses Retrieval
 
 ---
 
-#### How It Works
+### How It Works
 
 The application follows a standard RAG pipeline, divided into two main stages:
 
@@ -84,7 +84,7 @@ The script will first create the FAISS index (this may take a few minutes depend
 
 ---
 
-#### Technology Stack
+### Technology Stack
 ##### Naive RAG:
 
 -   **Backend Framework**: [LangChain](https://www.langchain.com/)
