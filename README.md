@@ -2,19 +2,17 @@
 
 This project is a fully local, chat-based Research Assistant that uses Retrieval Augmented Generation (RAG) to answer questions about scientific papers and other documents in PDF format. It leverages a local LLM and a vector database, ensuring your data remains private.
 
-![Screenshot of the Research Assistant UI](https://media.licdn.com/dms/image/v2/D4D22AQEuR6oSoEUedA/feedshare-shrink_1280/B4DZfNzyaXH4Ao-/0/1751504595899?e=1755734400&v=beta&t=GcJOC2x73wGgTmQ7M9pwgIjedT8Kl2rtIrkrjQVzRwE)
 
- ##### *We used Naive RAG for this project . Try to figour out  other pattern*
 ---
 
 ### Features
 
 -   **📄 PDF Document Processing**: Ingests and processes multiple PDF files from a local directory.
--   **🧠 Local LLM**: Uses the CPU-optimized `Gemma-2-2B-IT` model in GGUF format, running entirely on your machine. No API keys needed.
+-   **🧠 Local LLM**: Uses the CPU-optimized  e.g. `Gemma-2-2B-IT` model in GGUF format, running entirely on your machine. No API keys needed.
 -   **💾 Efficient Indexing**: Creates and caches a [FAISS](https://faiss.ai/) vector index for fast and efficient document retrieval.
 -   **💬 Interactive UI**: A simple and clean chat interface built with [Gradio](https://www.gradio.app/).
 -   **✅ Source Citations**: Each answer includes citations pointing to the source document and page number.
--   **⚙️ Cross-Platform**: All file paths are relative, making the project portable across different operating systems.
+-   **⚙️ Highly Configurable Paths**: All file paths (for documents, models, and index) are defined parametrically in `config.py` and are relative to the project root, making the project highly portable across different operating systems and local setups.
 
 ---
 
@@ -42,20 +40,23 @@ This happens every time you ask a question.
 Follow these steps to get the application running on your local machine.
 
 **Prerequisites:**
--   Python 3.10 or newer
+-   Python 3.10.x to 3.12.x (or specify the exact range you tested)
 -   Git
+-   Operating System: Tested on Windows 10/11, macOS, and Linux (Ubuntu 22.04+ recommended).
 
 **1. Clone the Repository**
 ```bash
 git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
 cd YOUR_REPOSITORY_NAME
+
 ```
 
 **2. Set Up Project Structure**
-Create the necessary folders for your documents and the LLM model.
+Create the necessary folders for your documents and the LLM model(s).
 ```bash
 mkdir docs
 mkdir models
+mkdir faiss_index # This directory will be populated automatically on first run
 ```
 
 **3. Add Your Files**
